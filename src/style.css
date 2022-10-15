@@ -1,5 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
 
+html, 
+body {
+    height: 100%;
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -67,13 +72,20 @@ img {
 }
 
 @media (min-width: 1440px) {
+
+  body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
   .container {
     display: flex;
     flex-direction: row-reverse;
     justify-content: center;
-    max-width:max-content;
+    max-width: fit-content;
+    align-items: center;
   }
-
 
   img {
     border-top-left-radius: 0px;
